@@ -2,7 +2,8 @@ package com.gettipsi.stripe;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableMap;
@@ -35,11 +36,11 @@ import static com.gettipsi.stripe.util.Converters.convertTokenToWritableMap;
 import static com.gettipsi.stripe.util.Converters.getAllowedShippingCountryCodes;
 import static com.gettipsi.stripe.util.Converters.getBillingAddress;
 import static com.gettipsi.stripe.util.Converters.putExtraToTokenMap;
-import static com.gettipsi.stripe.util.PayParams.CURRENCY_CODE;
 import static com.gettipsi.stripe.util.PayParams.BILLING_ADDRESS_REQUIRED;
-import static com.gettipsi.stripe.util.PayParams.SHIPPING_ADDRESS_REQUIRED;
-import static com.gettipsi.stripe.util.PayParams.PHONE_NUMBER_REQUIRED;
+import static com.gettipsi.stripe.util.PayParams.CURRENCY_CODE;
 import static com.gettipsi.stripe.util.PayParams.EMAIL_REQUIRED;
+import static com.gettipsi.stripe.util.PayParams.PHONE_NUMBER_REQUIRED;
+import static com.gettipsi.stripe.util.PayParams.SHIPPING_ADDRESS_REQUIRED;
 import static com.gettipsi.stripe.util.PayParams.TOTAL_PRICE;
 
 /**

@@ -2,8 +2,9 @@ package com.gettipsi.stripe;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableMap;
@@ -15,7 +16,8 @@ import com.google.android.gms.wallet.WalletConstants;
 
 public abstract class PayFlow {
 
-  protected final @NonNull Fun0<Activity> activityProvider;
+  protected final @NonNull
+  Fun0<Activity> activityProvider;
   private String publishableKey; // invalid value by default
   private int environment; // invalid value by default
   private ReadableMap errorCodes; // invalid value by default, set in runtime
